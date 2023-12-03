@@ -1,11 +1,16 @@
+body {
+    background-color: #7E6551;
+    margin: 0;
+}
+
 header {
-    background-color: gray;
+    background-color: #E6CCBE;
     color: blue;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px solid white; /* Add a border at the bottom of the header */
+    border-bottom: 2px solid white;
 }
 
 .logo img {
@@ -28,7 +33,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 100px; /* Adjust this value to control spacing */
+    margin-right: 70px;
     font-size: 20%;
     border-radius: 10px;
     transition: border 0.2s;
@@ -42,28 +47,137 @@ nav ul li a {
     font-family: century;
     transition: color 0.3s;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 nav ul li a:hover {
     color: white;
-    border: 2.5px solid white; 
+    border: 2.5px solid #2C0703; 
     border-radius: 10px;
 }
 
-body {
-    background-color: gray;
-}
 .content {
     display: flex;
-    justify-content: flex-end; /* Align the image to the right */
-    height: 100vh; 
+    height: 82vh;
+}
+
+.text-container {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.text-container h1 {
+    color: black;
+    transition: color 0.3s;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+.text-container h1 span {
+    color: white; /* Set the color for "I craft" */
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
 
 .picture {
+    width: 80%;
+    object-fit: cover;
+}
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px; 
     position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 40%; /* Adjust the width of the picture */
-    object-fit: cover; /* Ensure the image covers the container */
+
+}
+
+.social-icons a {
+    margin: 0 10px; 
+    font-size: 30px;
+    color: black;
+
+}
+
+
+#about {
+    background-color: #D9CBB7;
+}
+
+#about .content {
+    display: flex;
+    height: 82vh;
+}
+
+#about .image-container {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#about .image-container img {
+    width: 300px; 
+    object-fit: cover;
+    align-items: center;
+}
+
+#about .text-container {
+    flex: 0.5;
+    padding: 20px;
+    text-align: left;
+}
+#services {
+    background-color: #7E6551;
+    padding: 40px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.service {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin: 10px; 
+    border: 1px solid #D9CBB7;
+    border-radius: 5px;
+    background-color: #E6CCBE; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    max-width: 80px; 
+    height: auto;
+    border-radius: 50%;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+    color: #7E6551; 
+}
+
+.service p {
+    font-size: 16px; 
+    color: #7E6551; 
+}
+#services h2 {
+    text-align: center;
+    font-style: bold;
+    align-items: center;
+    font-size: 50px;
 }
