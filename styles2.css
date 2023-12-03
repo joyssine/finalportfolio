@@ -54,6 +54,10 @@ nav ul li a:hover {
 body {
     background-color: gray;
 }
+.content {
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    height: 100vh; 
 
 .picture {
     position: relative;
